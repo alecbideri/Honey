@@ -1,6 +1,11 @@
 import React from "react";
+import Navbar from "./component/Navbar.jsx";
 
 const App = () => {
-  return <div className="text-red-500">App</div>;
+  return (
+    <div className="overflow-x-hidden">
+      <Navbar />
+    </div>
+  );
 };
 export default App;
