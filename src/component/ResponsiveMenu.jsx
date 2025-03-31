@@ -19,6 +19,11 @@ const ResponsiveMenu = ({ open }) => {
                   <a href={item.link}>{item.title}</a>
                 </li>
               ))}
+              <li className="mt-4">
+                <button className="bg-white px-5 py-2 rounded-lg text-primary cursor-pointer ">
+                  Sign Up
+                </button>
+              </li>
             </ul>
           </div>
         </motion.div>

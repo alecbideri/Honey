@@ -1,4 +1,8 @@
 import menu_icon from "./menu_icon.svg";
+import hero from "./Hero_honey.png";
+import profile1 from "./profile1.jpg";
+import profile2 from "./profile2.jpg";
+import profile3 from "./profile3.jpg";
 
 export const NavbarMenu = [
   {
@@ -35,4 +39,8 @@ export const NavbarMenu = [
 
 export const assets = {
   menu_icon,
+  hero,
+  profile3,
+  profile1,
+  profile2,
 };
