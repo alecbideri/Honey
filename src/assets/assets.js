@@ -3,6 +3,7 @@ import hero from "./Hero_honey.png";
 import profile1 from "./profile1.jpg";
 import profile2 from "./profile2.jpg";
 import profile3 from "./profile3.jpg";
+import bee from "./bee.png";
 
 export const NavbarMenu = [
   {
@@ -13,7 +14,7 @@ export const NavbarMenu = [
   {
     id: 2,
     title: "About",
-    link: "#",
+    link: "about",
   },
   {
     id: 3,
@@ -43,4 +44,5 @@ export const assets = {
   profile3,
   profile1,
   profile2,
+  bee,
 };

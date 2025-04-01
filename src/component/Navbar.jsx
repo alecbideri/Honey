@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavbarMenu } from "../assets/assets.js";
 import { Search, ShoppingBasket } from "lucide-react";
 import { assets } from "../assets/assets";
@@ -6,17 +6,41 @@ import ResponsiveMenu from "./ResponsiveMenu.jsx";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [isShadowVisible, setIsShadowVisible] = React.useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 32) {
+        setIsShadowVisible(true);
+      } else {
+        setIsShadowVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Navbar class and all properties
+
+  const navbarClasses = `bg-white fixed top-0  left-0 right-0 z-50 transition-shadow duration-300 ease-in-out ${
+    isShadowVisible ? "shadow-md" : " "
+  }`;
+
   return (
     <>
-      <nav className="bg-white shadow-md">
-        <div className="container mx-auto h-16 px-4  flex items-center justify-between">
+      <nav className={navbarClasses}>
+        <div className="container mx-auto h-16 px-8 flex items-center justify-between">
           {/* Logo section */}
           <div className="flex items-center gap-2 uppercase">
-            <h2 className="text-sm bg-primary px-5 py-4 rounded-full text-white">
-              H
-            </h2>
+            <div className="text-sm bg-primary px-5 py-4 rounded-full w-12 h-12 text-white text-center flex items-center">
+              <h1>H</h1>
+            </div>
             <p className="text-xl font-bold cursor-pointer hover:text-primary">
-              Honey
+              <a href="#">Honey</a>
             </p>
           </div>
 
