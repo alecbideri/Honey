@@ -9,7 +9,7 @@ const Ingridients = () => {
           Ingridients
         </h1>
         <div className="flex  items-center justify-center gap-20 max-md:flex-col max-md:gap-8">
-          <div className="flex flex-col items-center gap-3 border-2 px-2 py-4 rounded-lg border-gray-200 hover:border-primary/50 cursor-pointer hover:shadow-md shadow-primary/50">
+          <div className="flex flex-col items-center gap-3 border-2 px-2 py-4 max-md:px-8 rounded-lg border-gray-200 hover:border-primary/50 cursor-pointer hover:shadow-md shadow-primary/50">
             <img
               src={assets.ingrid_1}
               alt="ingrid image"
@@ -23,7 +23,7 @@ const Ingridients = () => {
               aptent taciti{" "}
             </p>
           </div>
-          <div className="flex flex-col items-center gap-3 border-2 px-2 py-4 rounded-lg border-gray-200 hover:border-primary/50 cursor-pointer hover:shadow-md shadow-primary/50">
+          <div className="flex flex-col items-center gap-3 border-2 px-2 py-4 max-md:px-8 rounded-lg border-gray-200 hover:border-primary/50 cursor-pointer hover:shadow-md shadow-primary/50">
             <img
               src={assets.ingrid_2}
               alt="ingrid image"
@@ -37,7 +37,7 @@ const Ingridients = () => {
               aptent taciti{" "}
             </p>
           </div>
-          <div className="flex flex-col items-center gap-3 border-2 px-2 py-4 rounded-lg border-gray-200 hover:border-primary/50 cursor-pointer hover:shadow-md shadow-primary/50">
+          <div className="flex flex-col items-center gap-3 border-2 px-2 py-4 max-md:px-8 rounded-lg border-gray-200 hover:border-primary/50 cursor-pointer hover:shadow-md shadow-primary/50">
             <img
               src={assets.ingrid_3}
               alt="ingrid image"
