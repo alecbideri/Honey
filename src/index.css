@@ -3,3 +3,9 @@
 @theme{
     --color-primary : #F98F44
 }
+
+@layer utilities{
+    .container{
+        @apply px-4 py-6 sm:px-10
+    }
+}
