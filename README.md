@@ -1,1 +1,1 @@
-# Honey  the application that show cases the
+# Honey  the application that show cases the design
